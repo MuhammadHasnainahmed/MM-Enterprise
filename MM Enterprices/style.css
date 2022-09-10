@@ -97,7 +97,8 @@
   }
    
   .counter{
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 40px;
     color: gray;
   }
   
@@ -223,12 +224,9 @@
       padding: 20px 10px;
       color: #0b5295 !important;
     }
-  .anime-num{
-  font-size: 30px;
-  }
-  .anime-num{
-  font-size: 30px;
-  }
+    
+
+    
     /* -----------------------service-edge----------------------------------- */
   
   

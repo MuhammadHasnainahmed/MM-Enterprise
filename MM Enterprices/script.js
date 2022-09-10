@@ -24,8 +24,7 @@ function elementInViewport(el) {
 
 function initCounter() {
   const myElement = document.getElementById("our-journey");
-    // const isFocused = (document.activeElement === myElement)
-    console.log('hello', elementInViewport(myElement))
+ 
     if(!elementInViewport(myElement) && isDone) return;  
   counters.forEach((counter) => {
     const updateCount = (e) => {
