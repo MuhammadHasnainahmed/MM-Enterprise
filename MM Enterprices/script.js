@@ -1,6 +1,10 @@
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
 let section = document.querySelector(".container");
 let counters = document.querySelectorAll(".counter");
-let speed = 1000;
+let speed = 500;
 let isDone = false;
 function elementInViewport(el) {
   var top = el.offsetTop;
@@ -8,7 +12,7 @@ function elementInViewport(el) {
   var width = el.offsetWidth;
   var height = el.offsetHeight;
 
-  while(el.offsetParent) {
+  while (el.offsetParent) {
     el = el.offsetParent;
     top += el.offsetTop;
     left += el.offsetLeft;
@@ -17,15 +21,16 @@ function elementInViewport(el) {
   return (
     top >= window.pageYOffset &&
     left >= window.pageXOffset &&
-    (top + height) <= (window.pageYOffset + window.innerHeight) &&
-    (left + width) <= (window.pageXOffset + window.innerWidth)
+    top + height <= window.pageYOffset + window.innerHeight &&
+    left + width <= window.pageXOffset + window.innerWidth
   );
 }
 
 function initCounter() {
   const myElement = document.getElementById("our-journey");
- 
-    if(!elementInViewport(myElement) && isDone) return;  
+  console.log('done')
+
+  if (!elementInViewport(myElement) && isDone) return;
   counters.forEach((counter) => {
     const updateCount = (e) => {
       const target = +counter.getAttribute("data-target");
@@ -37,12 +42,31 @@ function initCounter() {
       } else {
         count.innerText = target;
       }
-      isDone = true
+      isDone = true;
+      window.removeEventListener('scroll', counterTimeout)
     };
     updateCount();
   });
 }
-  
 
-window.addEventListener('scroll', () => setTimeout(initCounter, 1000));
-// window.removeEventListener('scroll'.isDone) 
+const counterTimeout = () => setTimeout(initCounter, 1000);
+
+window.addEventListener("scroll", counterTimeout);
+// window.removeEventListener('scroll'.isDone)
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+}) 
