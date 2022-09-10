@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* ------------------navbar----------------------------- */
+  .navbar {
+    position: fixed;
+  }
+  /* -------------- ------SLider Section-------------------------------------- */
+  
+  .curseol-content {
+    top: 100px !important;
+  }
+  
+  .curseol-content h1 {
+    font-size: 60px !important;
+  }
+  
+  /* --------------------card-section------------------------------ */
+  
+  #card-section {
+    background-image: url(./img/home-world-1.jpg);
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+  }
+  
+  .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  
+  .cards-text {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  
+  .card {
+    margin-left: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .img-anime {
+    transform: scale(1);
+  }
+  .img-anime:hover {
+    transition: 1s all ease-in-out;
+    transform: scale(1.1);
+    filter: brightness(60%);
+  }
+  
+  .btn-primary {
+    border-radius: 50px !important;
+    font-size: small !important;
+  }
+  
+  /* ---------------------our-journey------------------------------- */
+  
+  #our-journey {
+    background-image: url(./img/orange-truck-background.jpg);
+    background-size: cover;
+    width: auto;
+    height: auto;
+    
+    margin-bottom: 0;
+    padding: 50px;
+    background-position: center;
+  }
+  
+  .title {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    color: #0b5295;
+    
+   }
+  
+   .title::before{
+    content: '';
+    background-color: rgb(24, 144, 24);
+    height: 3px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+  }
+  
+   
+  .icon{
+    font-size: 50px;
+    color: whitesmoke;
+  }
+   
+  .counter{
+    font-size: 30px;
+    color: gray;
+  }
+  
+  .h5-text{
+    color: whitesmoke;
+  }
+  
+  /* -----------------------service-edge----------------------------------- */
+  
+  
+  
+  #service-edge{
+    padding-top: 70px;
+    background-color:#fff ;
+    margin-bottom: 50px
+  }
+  
+  
+  
+  .page-contant{
+    padding-top: 80px;
+  }
+  
+  
+  .service-element{
+    padding-bottom: 30px;
+    transition: .3s ease-in-out;
+  }
+  
+  
+  .icon-container img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .service-element:hover{
+    box-shadow: 3px 5px 5px green;
+  }
+  
+  
+  
+  /* ----------------------------------------media qu------------------------------------------------------------------- */
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 1100px) {
+    .curseol-content {
+      top: 200px !important;
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    /* ------------------navbar----------------------------- */
+    .navbar {
+      position: fixed;
+    }
+  
+    /* -------------- ------SLider Section-------------------------------------- */
+  
+    .curseol-content {
+      top: 100px !important;
+    }
+  
+    .curseol-content h1 {
+      font-size: 60px !important;
+    }
+  
+    /* --------------------card-section------------------------------ */
+  
+    #card-section {
+      background-image: url(./img/home-world-1.jpg);
+      width: 100%;
+      height: auto;
+      background-attachment: fixed;
+    }
+  
+    .row {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  
+    .cards-text {
+      padding-top: 100px;
+      padding-bottom: 30px;
+    }
+  
+    .card {
+      margin-left: 30px;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+  
+    .img-anime {
+      transform: scale(1);
+    }
+  
+    .img-anime:hover {
+      transition: 1s all ease-in-out;
+      transform: scale(1.1);
+      filter: brightness(60%);
+    }
+  
+    .btn-primary {
+      border-radius: 50px !important;
+      font-size: small !important;
+    }
+  
+    /* ---------------------our-journey------------------------------- */
+  
+    #our-journey {
+      background-image: url(./img/orange-truck-background.jpg);
+      background-size: cover;
+      width: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    .title {
+      padding: 20px 10px;
+      color: #0b5295 !important;
+    }
+  .anime-num{
+  font-size: 30px;
+  }
+  .anime-num{
+  font-size: 30px;
+  }
+    /* -----------------------service-edge----------------------------------- */
+  
+  
+  
+    #service-edge {
+      padding-top: 70px;
+      background-color: aliceblue;
+    }
+  
+  
+  
+    .page-contant {
+      padding-top: 80px;
+    }
+  
+  
+    .service-element {
+      /* padding-left: 50px; */
+      padding-bottom: 10px;
+    }
+  
+  
+    .icon-container img {
+      width: 100px;
+      height: 100px;
+    }
+  
+  
+  
+    /* ----------------------------------------media qu------------------------------------------------------------------- */
+    /* // Small devices (landscape phones, 576px and up) */
+    @media (min-width: 1100px) {
+      .curseol-content {
+        top: 200px !important;
+      }
+    }
+  
+    @media (max-width: 650px) {
+      .curseol-content {
+        top: 35px !important;
+      }
+  
+      .card {
+        margin: 10px 20px;
+        width: 13rem;
+        height: 30rem;
+      }
+  
+      .font-size {
+        font-size: 20px !important;
+        color: red !important;
+      }
+    }
+  
+    @media (max-width: 350px) {
+      .curseol-content {
+        top: 35px !important;
+      }
+  
+      .font-size {
+        font-size: 20px !important;
+        color: red !important;
+      }
+    }
+  
+    @media (max-width: 766px) {
+      #service-edge {
+        text-align: center;
+      }
+  
+      .title {
+        font-size: 25px;
+      }
+    }
+  }
+  
