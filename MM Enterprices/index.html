@@ -31,8 +31,10 @@
     />
     <!-- Font awsome -->
     <!-- SLider LInk -->
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
     <!-- SLider LInk -->
   </head>
@@ -392,18 +394,27 @@
         </div>
       </div>
     </section>
-    <div class="owl-carousel owl-theme">
-      <div class="item">Your Content</div>
-      <div class="item">Your Content</div>
-      <div class="item">Your Content</div>
-      <div class="item">Your Content</div>
-      <div class="item">Your Content</div>
-      <div class="item">Your Content</div>
-      <div class="item">Your Content</div>
+
+    <!-- -------------------------------------------------------------------------------------------------- -->
+    <div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="d-block mx-auto" src="/img/slide-1-fleet.png" height="100%" />
+          </div>
+          <div class="swiper-slide">
+            <img class="d-block mx-auto" src="/img/slide-2-fleet.png" height="100%" />
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
     </div>
-    <!-- java script -->
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

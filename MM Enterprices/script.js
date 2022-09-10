@@ -1,6 +1,4 @@
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
+
 
 let section = document.querySelector(".container");
 let counters = document.querySelectorAll(".counter");
@@ -54,19 +52,26 @@ const counterTimeout = () => setTimeout(initCounter, 1000);
 window.addEventListener("scroll", counterTimeout);
 // window.removeEventListener('scroll'.isDone)
 
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:5
-      }
-  }
-}) 
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  centeredSlides: true,
+  autoplay: true, 
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
